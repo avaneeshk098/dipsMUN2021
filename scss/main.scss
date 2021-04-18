@@ -1,4 +1,5 @@
 @import "variables";
+@import "navs";
 * {
     margin: 0;
     padding: 0;
@@ -56,14 +57,44 @@
     }
 }
 
+.timer {
+    transform: translateY(-36px);
+    padding-bottom: 10rem;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &__days {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__daysn {
+        font-size: 3em;
+        font-weight: 900;
+        color: #b07318b6;
+        font-family: 'IBM Plex Sans';
+    }
+    &__daysd {
+        font-size: 1.5em;
+        font-family: 'IBM Plex Sans';
+    }
+}
+
 .committees {
     transform: translateY(-4%);
     width: 100%;
+    padding-top: 4rem;
+    background-color: aliceblue;
     &__title {
         font-family: 'IBM Plex Sans';
         font-weight: 800;
         letter-spacing: 1px;
         text-align: center;
+        font-size: 2.3em;
         width: 100%;
         text-transform: uppercase;
         padding-bottom: 4%;
@@ -102,6 +133,7 @@
         transform: translate(-50%, -50%);
         background-color: $primary-color;
         width: 30%;
+        font-weight: 500;
         font-family: "Raleway";
         color: $text-light;
         box-shadow: 2px 2px 4px #5f5f5f;
@@ -111,4 +143,7 @@
             background-color: $secondary-color;
         }
     }
+}
+.disabled {
+    visibility: hidden;
 }
