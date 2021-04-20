@@ -16,7 +16,7 @@
         background-color: rgba(0, 0, 0, 0.8);
     }
     &__link-list-div {
-        height: 250px;
+        max-height: 0px;
         transform: translateY(-500px);
         background-color: rgba(0, 0, 0, 0.8);
     }
@@ -62,6 +62,43 @@
 }
 
 .active {
+    max-height: 250px;
+    height: 250px;
     transition: all ease-in-out 500ms;
     transform: translateY(0px);
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        &__burger {
+            display: none;
+        }
+        &__title-bar {
+            padding-right: 0;
+        }
+        &__link-list-div {
+            max-height: 250px;
+            transform: translateY(0px);
+            display: flex;
+            align-items: center;
+            width: calc(100% - 98px);
+        }
+        &__link-list {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__link-item {
+            width: auto;
+            margin-right: 3rem;
+            text-align: right;
+            a {
+                font-size: 1.2em;
+            }
+        }
+        &__logo {
+            margin-left: 2rem;
+        }
+    }
 }

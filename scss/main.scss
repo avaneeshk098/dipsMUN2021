@@ -58,8 +58,7 @@
 }
 
 .timer {
-    transform: translateY(-36px);
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
     &__container {
         display: flex;
         flex-direction: row;
@@ -85,7 +84,6 @@
 }
 
 .committees {
-    transform: translateY(-4%);
     width: 100%;
     padding-top: 4rem;
     background-color: aliceblue;
@@ -144,6 +142,37 @@
         }
     }
 }
+
+.footer {
+    padding-bottom: 4rem;
+    display: flex;
+    padding-top: 4rem;
+    background-color: $background-color;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans";
+    &__title {
+        font-size: 2.5em;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+    }
+    &__date {
+        color: $text-light;
+    }
+    &__credits {
+        margin-top: 1rem;
+        font-weight: 400;
+        color: $primary-color;
+    }
+}
+
 .disabled {
     visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .jumbo {
+        height: 80vh;
+    }
 }
