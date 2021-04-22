@@ -91,7 +91,7 @@
 }
 
 .active {
-  max-height: 250px;
+  max-height: 213px;
   height: 250px;
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
@@ -146,6 +146,127 @@
   }
 }
 
+.resources__main {
+  height: 100%;
+  position: relative;
+  padding-top: calc(82px + 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.resources__main::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/resources.jpg");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  -webkit-filter: blur(2px) grayscale(100%);
+          filter: blur(2px) grayscale(100%);
+}
+
+.resources__title {
+  position: relative;
+  font-family: "IBM Plex Sans";
+  font-weight: 900;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #cba035cb;
+  letter-spacing: 0.8px;
+}
+
+.resources__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resources__button {
+  border: 1px solid aliceblue;
+  border-radius: 4px;
+  color: black;
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  position: relative;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: aliceblue;
+  font-size: 1.3em;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.resources__button:hover {
+  background-color: #CBA135;
+  cursor: pointer;
+  border-color: #CBA135;
+  color: #fff;
+}
+
+.footer {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+@media screen and (min-width: 768px) {
+  .resources__main::before {
+    background-image: url("../img/jumbotron.jpg");
+  }
+  .resources__container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .resources__button {
+    width: 20vw;
+  }
+}
+
+body {
+  background-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -158,8 +279,7 @@
   -webkit-filter: blur(0.7px) opacity(93%);
           filter: blur(0.7px) opacity(93%);
   background-size: cover;
-  background-position: top;
-  background-position-x: center;
+  background-position: center;
   width: 100vw;
   height: 70vh;
 }
@@ -173,8 +293,8 @@
   padding: 11%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  -webkit-transform: translateY(-36%);
-          transform: translateY(-36%);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
   display: block;
   background-color: #000;
 }
@@ -213,17 +333,19 @@
 }
 
 .timer {
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: whitesmoke;
 }
 
 .timer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -249,6 +371,7 @@
 }
 
 .timer__daysn {
+  margin-top: 1rem;
   font-size: 3em;
   font-weight: 900;
   color: #b07318b6;
@@ -328,7 +451,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #CBA135;
-  width: 30%;
+  width: 50%;
   font-weight: 500;
   font-family: "Raleway";
   color: #fff;
@@ -384,8 +507,21 @@
 }
 
 @media screen and (min-width: 768px) {
-  .jumbo {
-    height: 80vh;
+  .timer {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+  .timer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .committees__committee-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

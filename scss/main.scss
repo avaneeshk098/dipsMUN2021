@@ -1,5 +1,7 @@
 @import "variables";
 @import "navs";
+@import "about";
+@import "resources";
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,7 @@
     background-image: url("../img/jumbotron.jpg");
     filter: blur(0.7px) opacity(93%);
     background-size: cover;
-    background-position: top;
-    background-position-x: center;
+    background-position: center;
     width: 100vw;
     height: 70vh;
 }
@@ -23,7 +24,7 @@
         padding: 11%;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        transform: translateY(-36%);
+        transform: translateY(-1px);
         display: block;
         background-color: $background-color;
     }
@@ -58,10 +59,12 @@
 }
 
 .timer {
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: whitesmoke;
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -72,6 +75,7 @@
         justify-content: center;
     }
     &__daysn {
+        margin-top: 1rem;
         font-size: 3em;
         font-weight: 900;
         color: #b07318b6;
@@ -130,7 +134,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: $primary-color;
-        width: 30%;
+        width: 50%;
         font-weight: 500;
         font-family: "Raleway";
         color: $text-light;
@@ -172,7 +176,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    .jumbo {
-        height: 80vh;
+    .timer {
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+        &__container {
+            flex-direction: row;
+        }
+    }
+    .committees {
+        &__committee-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }

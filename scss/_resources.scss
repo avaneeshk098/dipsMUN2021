@@ -1,0 +1,90 @@
+.resources {
+    &__main {
+        height: 100%;
+        position: relative;
+        padding-top: calc(82px + 2rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+    &__main::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/resources.jpg");
+        background-position-y: center;
+        background-position-x: center;
+        background-size: cover;
+        filter: blur(2px) grayscale(100%);
+    }
+    &__title {
+        position: relative;
+        font-family: "IBM Plex Sans";
+        font-weight: 900;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        color: #cba035cb;
+        letter-spacing: 0.8px;
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__button {
+        border: 1px solid aliceblue;
+        border-radius: 4px;
+        color: black;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-top: 2rem;
+        position: relative;
+        font-family: "Raleway";
+        font-weight: 600;
+        background-color: aliceblue;
+        font-size: 1.3em;
+        transition: all ease-in-out 500ms;
+        &:hover {
+            background-color: $primary-color;
+            cursor: pointer;
+            border-color: $primary-color;
+            color: $text-light;
+        }
+    }
+}
+
+.footer {
+    transform: translateY(-3px);
+}
+
+@media screen and (min-width: 768px) {
+    .resources {
+        &__main::before {
+            background-image: url("../img/jumbotron.jpg");
+        }
+        &__container {
+            display: grid;
+            width: 100%;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__button {
+            width: 20vw;
+        }
+    }
+}
+
+body {
+    background-color: black;
+}
