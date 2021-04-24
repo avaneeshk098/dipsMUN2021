@@ -22,15 +22,6 @@
         background-size: cover;
         filter: blur(2px) grayscale(100%);
     }
-    &__title {
-        position: relative;
-        font-family: "IBM Plex Sans";
-        font-weight: 900;
-        font-size: 2.5em;
-        text-transform: uppercase;
-        color: #cba035cb;
-        letter-spacing: 0.8px;
-    }
     &__container {
         position: relative;
         display: flex;
@@ -39,9 +30,9 @@
         justify-content: center;
     }
     &__button {
-        border: 1px solid aliceblue;
+        border: 1px solid $primary-color;
         border-radius: 4px;
-        color: black;
+        color: white;
         width: 60vw;
         display: flex;
         align-items: center;
@@ -51,16 +42,26 @@
         margin-top: 2rem;
         position: relative;
         font-family: "Raleway";
-        font-weight: 600;
-        background-color: aliceblue;
+        background-color: $primary-color;
+        text-transform: uppercase;
         font-size: 1.3em;
         transition: all ease-in-out 500ms;
         &:hover {
-            background-color: $primary-color;
+            background-color: $secondary-color;
             cursor: pointer;
-            border-color: $primary-color;
+            border-color: $secondary-color;
             color: $text-light;
         }
+    }
+    &__dtitle {
+        position: relative;
+        margin-top: 3rem;
+        font-family: "IBM Plex Sans";
+        color: whitesmoke;
+        padding: 1rem;
+        border-radius: 2px;
+        font-size: 1.7em;
+        background-color: rgba(59, 59, 59, 0.844);
     }
 }
 
@@ -80,7 +81,12 @@
             grid-template-columns: repeat(2, 1fr);
         }
         &__button {
-            width: 20vw;
+            width: 30vw;
+            font-size: 1.4em;
+        }
+        &__dtitle{
+            font-size: 2.2em;
+            border-radius: 6px;
         }
     }
 }

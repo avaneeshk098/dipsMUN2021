@@ -181,16 +181,6 @@
           filter: blur(2px) grayscale(100%);
 }
 
-.resources__title {
-  position: relative;
-  font-family: "IBM Plex Sans";
-  font-weight: 900;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  color: #cba035cb;
-  letter-spacing: 0.8px;
-}
-
 .resources__container {
   position: relative;
   display: -webkit-box;
@@ -209,9 +199,9 @@
 }
 
 .resources__button {
-  border: 1px solid aliceblue;
+  border: 1px solid #CBA135;
   border-radius: 4px;
-  color: black;
+  color: white;
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,18 +217,29 @@
   margin-top: 2rem;
   position: relative;
   font-family: "Raleway";
-  font-weight: 600;
-  background-color: aliceblue;
+  background-color: #CBA135;
+  text-transform: uppercase;
   font-size: 1.3em;
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
 }
 
 .resources__button:hover {
-  background-color: #CBA135;
+  background-color: #B07418;
   cursor: pointer;
-  border-color: #CBA135;
+  border-color: #B07418;
   color: #fff;
+}
+
+.resources__dtitle {
+  position: relative;
+  margin-top: 3rem;
+  font-family: "IBM Plex Sans";
+  color: whitesmoke;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 1.7em;
+  background-color: rgba(59, 59, 59, 0.844);
 }
 
 .footer {
@@ -259,12 +260,212 @@
         grid-template-columns: repeat(2, 1fr);
   }
   .resources__button {
-    width: 20vw;
+    width: 30vw;
+    font-size: 1.4em;
+  }
+  .resources__dtitle {
+    font-size: 2.2em;
+    border-radius: 6px;
   }
 }
 
 body {
   background-color: black;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: calc(82px + 2rem);
+  padding-bottom: 2rem;
+}
+
+.contact__title {
+  color: #CBA135;
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.contact__divider-parent {
+  width: 100%;
+  min-height: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__coordinators {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__divider {
+  width: 60%;
+  min-height: 8px;
+  background-color: #e0c786;
+}
+
+.contact__divider-main {
+  width: 60%;
+  min-height: 8px;
+  background-color: #e0c786;
+}
+
+.contact__coitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__cotitle {
+  color: #B07418;
+  font-weight: 700;
+  font-family: "Raleway";
+  font-size: 1.6em;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.contact__conumber {
+  font-family: "IBM Plex Sans";
+  font-size: 1.6em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.contact__form-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact__form {
+  width: 70%;
+}
+
+.contact__form-title {
+  color: #CBA135;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "IBM Plex Sans";
+  margin-bottom: 1rem;
+}
+
+.contact__field {
+  width: 100%;
+  margin-bottom: 2rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Raleway";
+}
+
+.contact__submit {
+  width: 100%;
+  border: none;
+  height: 40px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+  background-color: #CBA135;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.contact__submit:hover {
+  background-color: #B07418;
+}
+
+@media screen and (min-width: 360px) {
+  .contact__title {
+    font-size: 1.6em;
+  }
+  .contact__form-parent {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__form-parent {
+    margin-right: 4rem;
+    width: 60%;
+  }
+  .contact__divider {
+    width: 50%;
+  }
+  .contact__desktop-div {
+    display: none;
+  }
 }
 
 * {
@@ -487,7 +688,7 @@ body {
 }
 
 .footer__title {
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #CBA135;
   margin-bottom: 0.5rem;
 }
@@ -499,11 +700,21 @@ body {
 .footer__credits {
   margin-top: 1rem;
   font-weight: 400;
+  font-size: 0.9em;
   color: #CBA135;
 }
 
 .disabled {
   visibility: hidden;
+}
+
+@media screen and (min-width: 360px) {
+  __title {
+    font-size: 2.5em;
+  }
+  __credits {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 768px) {

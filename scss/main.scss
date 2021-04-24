@@ -2,6 +2,7 @@
 @import "navs";
 @import "about";
 @import "resources";
+@import "contact";
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +158,7 @@
     align-items: center;
     font-family: "IBM Plex Sans";
     &__title {
-        font-size: 2.5em;
+        font-size: 2.2em;
         color: $primary-color;
         margin-bottom: 0.5rem;
     }
@@ -167,12 +168,22 @@
     &__credits {
         margin-top: 1rem;
         font-weight: 400;
+        font-size: 0.9em;
         color: $primary-color;
     }
 }
 
 .disabled {
     visibility: hidden;
+}
+
+@media screen and(min-width: 360px) {
+    &__title {
+        font-size: 2.5em;
+    }
+    &__credits {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 768px) {
