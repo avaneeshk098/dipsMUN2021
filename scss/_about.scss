@@ -1,0 +1,54 @@
+        .about {
+            height: 100%;
+            padding-top: calc(82px + 2rem);
+            &__title {
+                text-align: center;
+                font-weight: 700;
+                font-family: "IBM Plex Sans";
+                font-size: 2.5em;
+            }
+            &__heading {
+                color: $primary-color;
+                font-size: 1.5em;
+                font-weight: 600;
+                font-family: "IBM Plex Sans";
+            }
+            &__para {
+                font-family: "Raleway";
+                font-weight: 500;
+                font-size: 1.1em;
+                margin-top: 1.5rem;
+                margin-bottom: 3rem;
+            }
+            &__container {
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            &__img {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            .about {
+                &__para {
+                    width: 80%;
+                }
+                &__heading {
+                    width: 80%;
+                    text-align: center;
+                }
+                &__img {
+                    display: block;
+                    width: 23rem;
+                }
+                &__p1,
+                &__p2,
+                &__p3 {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
