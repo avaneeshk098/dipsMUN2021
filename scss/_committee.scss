@@ -1,0 +1,76 @@
+.committee {
+    padding-top: calc(82px + 2rem);
+    &__content {
+        font-family: "Raleway";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        color: $primary-color;
+        font-weight: 600;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.9em;
+        font-family: 'IBM Plex Sans';
+    }
+    &__desc {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        font-weight: 500;
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    &__agenda {
+        font-weight: 700;
+        font-size: 1.3em;
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+    &__panel {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__chair {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        justify-content: center;
+        font-family: "IBM Plex Sans";
+    }
+    &__image {
+        border-radius: 100%;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+    }
+    &__name {
+        color: $secondary-color;
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .committee {
+        &__panel {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        &__desc {
+            width: 80%;
+            line-height: 1.7em;
+        }
+        &__title {
+            font-size: 2.3em;
+        }
+    }
+}
