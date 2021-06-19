@@ -122,10 +122,9 @@
     .committees__committee-item:hover .middle {
         opacity: 1;
     }
-    .committees__committee-item:hover img {
-        opacity: 0.5;
-        filter: grayscale(0.5);
-    }
+    // .committees__committee-item:hover img {
+    //     opacity: 0.5;
+    // }
     .middle {
         opacity: 0;
         transition: all ease-in-out 500ms;
@@ -199,6 +198,13 @@
         &__committee-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+        }
+        &__committee-row1{
+            grid-template-columns: repeat(3,1fr);
+            &__committee-item{
+                grid-area: random;
+            }
+            grid-template-areas: ". random .";
         }
     }
 }

@@ -6,7 +6,7 @@ toggleButton.addEventListener("click", () => {
 })
 
 let currDate = new Date()
-let eventDate = new Date(2021, 5, 7, 22, 0, 0);
+let eventDate = new Date(2021, 6, 30, 7, 0, 0);
 setInterval(() => {
     currDate = new Date()
     let delta = eventDate.getTime() - currDate.getTime();

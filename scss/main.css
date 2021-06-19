@@ -91,7 +91,7 @@
 }
 
 .active {
-  max-height: 213px;
+  max-height: 250px;
   height: 250px;
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
@@ -113,7 +113,7 @@
     padding-right: 0;
   }
   .nav__link-list-div {
-    max-height: 250px;
+    max-height: 300px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     display: -webkit-box;
@@ -357,6 +357,13 @@ body {
   padding-bottom: 2rem;
 }
 
+.contact__image {
+  border-radius: 100%;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+}
+
 .contact__title {
   color: #CBA135;
   font-family: "IBM Plex Sans";
@@ -446,9 +453,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -504,6 +511,9 @@ body {
 }
 
 @media screen and (min-width: 360px) {
+  .contact {
+    height: 100%;
+  }
   .contact__title {
     font-size: 1.6em;
   }
@@ -580,6 +590,8 @@ body {
 .committee__agenda {
   font-weight: 700;
   font-size: 1.3em;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 2rem;
   text-transform: uppercase;
 }
@@ -647,6 +659,9 @@ body {
   }
   .committee__title {
     font-size: 2.3em;
+  }
+  .committee__agenda {
+    padding: 0;
   }
 }
 
@@ -815,12 +830,6 @@ body {
   opacity: 1;
 }
 
-.committees .committees__committee-item:hover img {
-  opacity: 0.5;
-  -webkit-filter: grayscale(0.5);
-          filter: grayscale(0.5);
-}
-
 .committees .middle {
   opacity: 0;
   -webkit-transition: all ease-in-out 500ms;
@@ -915,6 +924,16 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .committees__committee-row1 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ". random .";
+  }
+  .committees__committee-row1__committee-item {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: random;
   }
 }
 /*# sourceMappingURL=main.css.map */
