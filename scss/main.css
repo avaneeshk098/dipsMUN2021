@@ -781,6 +781,80 @@ body {
   font-family: 'IBM Plex Sans';
 }
 
+.secgen__bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secgen__bio img {
+  width: 60vw;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.secgen__bio h4 {
+  font-size: 1.7em;
+  font-family: 'IBM Plex Sans';
+  color: #CBA135;
+}
+
+.secgen__bio p {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #835612;
+}
+
+.secgen__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+}
+
+.secgen__desc h1 {
+  text-align: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.secgen__desc p {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 1rem;
+  font-family: 'IBM Plex Sans';
+  font-size: 1.1em;
+  color: #999999;
+}
+
 .committees {
   width: 100%;
   padding-top: 4rem;
@@ -918,6 +992,28 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .secgen__parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5vw;
+  }
+  .secgen__bio img {
+    width: 25vw;
+  }
+  .secgen__desc {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+  .secgen__desc p {
+    padding-left: 6rem;
   }
   .committees__committee-row {
     display: -ms-grid;
