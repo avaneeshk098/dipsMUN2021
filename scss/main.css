@@ -340,6 +340,7 @@ body {
 }
 
 .contact {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,6 +546,20 @@ body {
 }
 
 .committee {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: calc(82px + 2rem);
 }
 
@@ -679,11 +694,11 @@ body {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
 }
 
 .jumbo-parent {
-  height: 100%;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -712,6 +727,25 @@ body {
   font-size: 1.1em;
   color: #b3b3b3;
   margin-bottom: 1.5rem;
+}
+
+.jumbo-parent__description b {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #CBA135;
+  padding-top: 1rem;
+  font-family: 'IBM Plex Sans';
+}
+
+.jumbo-parent__description sup {
+  color: #CBA135;
+  font-family: 'IBM Plex Sans';
+}
+
+.jumbo-parent__description span {
+  color: #CBA135;
+  font-weight: bold;
+  font-family: 'Raleway';
 }
 
 .jumbo-parent__button {
