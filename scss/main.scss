@@ -26,8 +26,11 @@
         padding: 11%;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        min-height: 40vh;
         transform: translateY(-1px);
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: $background-color;
     }
     &__title {
