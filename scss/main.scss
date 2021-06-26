@@ -4,6 +4,7 @@
 @import "resources";
 @import "contact";
 @import "committee";
+@import "gallery";
 * {
     margin: 0;
     padding: 0;
@@ -47,18 +48,18 @@
         font-size: 1.1em;
         color: darken($text-light, 30%);
         margin-bottom: 1.5rem;
-        b{
+        b {
             font-size: 1.2em;
             text-transform: uppercase;
             color: $primary-color;
             padding-top: 1rem;
             font-family: 'IBM Plex Sans';
         }
-        sup{
+        sup {
             color: $primary-color;
             font-family: 'IBM Plex Sans';
         }
-        span{
+        span {
             color: $primary-color;
             font-weight: bold;
             font-family: 'Raleway';
@@ -132,14 +133,14 @@
             color: darken($secondary-color, 10);
         }
     }
-    &__desc{
+    &__desc {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 4rem;
         margin-top: 1.5rem;
-        h1{
+        h1 {
             text-align: center;
             width: 100%;
             padding-left: 2rem;
@@ -149,13 +150,13 @@
             text-transform: uppercase;
             color: darken($text-light, 20);
         }
-        p{
+        p {
             padding-left: 10vw;
             padding-right: 10vw;
             margin-top: 1rem;
             font-family: 'IBM Plex Sans';
             font-size: 1.1em;
-            color: darken($text-light,40);
+            color: darken($text-light, 40);
         }
     }
 }
@@ -232,14 +233,19 @@
         font-size: 2.2em;
         color: $primary-color;
         margin-bottom: 0.5rem;
+        text-align: center;
     }
     &__date {
+        text-align: center;
         color: $text-light;
     }
     &__credits {
         margin-top: 1rem;
         font-weight: 400;
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 0.9em;
+        text-align: center;
         color: $primary-color;
     }
 }
@@ -265,22 +271,22 @@
             flex-direction: row;
         }
     }
-    .secgen{
-        &__parent{
+    .secgen {
+        &__parent {
             display: flex;
             align-items: center;
             justify-content: center;
             padding-left: 5vw;
         }
-        &__bio{
-            img{
+        &__bio {
+            img {
                 width: 25vw;
             }
         }
-        &__desc{
+        &__desc {
             margin-bottom: 4rem;
             margin-top: 4rem;
-            p{
+            p {
                 padding-left: 6rem;
             }
         }

@@ -1,0 +1,53 @@
+.gallery{
+    padding-top: calc(82px + 2rem);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        font-size: 2.5em;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-family: "Raleway";   
+    }
+
+    &__parent{
+        margin-top: 1rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    &__item{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__image{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .gallery{
+        &__row{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__image{
+            width: 40vw;
+        }
+
+        &__item{
+            margin: 0;
+            padding-left: 1rem; 
+            padding-right: 1rem;
+            padding-bottom: 2rem;   
+        }
+    }
+}
