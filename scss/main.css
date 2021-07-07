@@ -616,6 +616,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -623,9 +624,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .committee__chair {
@@ -650,6 +651,7 @@ body {
   border-radius: 100%;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  width: 200px;
 }
 
 .committee__name {
