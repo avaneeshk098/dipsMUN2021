@@ -325,6 +325,14 @@ a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .resources__spec-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
   .resources__button {
     width: 30vw;
     font-size: 1.4em;

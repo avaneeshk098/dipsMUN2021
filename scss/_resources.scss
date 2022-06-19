@@ -85,6 +85,13 @@ a {
             justify-items: center;
             grid-template-columns: repeat(2, 1fr);
         }
+
+        &__spec-container{
+            display: grid;
+            width: 100%;
+            justify-items: center;
+            grid-template-columns: repeat(1, 1fr);
+        }
         &__button {
             width: 30vw;
             font-size: 1.4em;
